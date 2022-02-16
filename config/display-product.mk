@@ -100,9 +100,9 @@ PRODUCT_VENDOR_PROPERTIES += \
     vendor.display.secure_preview_buffer_format=420_sp \
     vendor.gralloc.secure_preview_buffer_format=420_sp \
     debug.sf.enable_advanced_sf_phase_offset=1 \
-    debug.sf.high_fps_late_sf_phase_offset_ns=-5000000 \
+    debug.sf.high_fps_late_sf_phase_offset_ns=-2000000 \
     debug.sf.high_fps_early_phase_offset_ns=-5000000 \
-    debug.sf.high_fps_early_gl_phase_offset_ns=-5000000
+    debug.sf.high_fps_early_gl_phase_offset_ns=-2000000
 endif
 
 ifeq ($(TARGET_BOARD_PLATFORM),monaco)
@@ -114,16 +114,16 @@ ifeq ($(TARGET_BOARD_PLATFORM),kona)
 PRODUCT_VENDOR_PROPERTIES += \
     debug.sf.enable_gl_backpressure=1 \
     debug.sf.enable_advanced_sf_phase_offset=1 \
-    debug.sf.high_fps_late_sf_phase_offset_ns=-4000000 \
+    debug.sf.high_fps_late_sf_phase_offset_ns=-2000000 \
     debug.sf.high_fps_early_phase_offset_ns=-4000000 \
-    debug.sf.high_fps_early_gl_phase_offset_ns=-4000000
+    debug.sf.high_fps_early_gl_phase_offset_ns=-2000000
 endif
 
 ifeq ($(TARGET_BOARD_PLATFORM),lito)
 PRODUCT_VENDOR_PROPERTIES += \
-    debug.sf.high_fps_late_sf_phase_offset_ns=-4000000 \
+    debug.sf.high_fps_late_sf_phase_offset_ns=-2000000 \
     debug.sf.high_fps_early_phase_offset_ns=-4000000 \
-    debug.sf.high_fps_early_gl_phase_offset_ns=-4000000 \
+    debug.sf.high_fps_early_gl_phase_offset_ns=-2000000 \
     debug.sf.perf_fps_late_sf_phase_offset_ns=-5000000 \
     debug.sf.perf_fps_early_phase_offset_ns=-5000000 \
     debug.sf.perf_fps_early_gl_phase_offset_ns=-5000000 \
